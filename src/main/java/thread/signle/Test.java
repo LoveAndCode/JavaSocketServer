@@ -1,4 +1,4 @@
-package signle;
+package thread.signle;
 
 /**
  * Created by Jang Jeong Hyeon on 2017-08-24.

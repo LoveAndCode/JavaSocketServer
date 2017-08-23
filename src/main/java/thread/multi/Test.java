@@ -1,4 +1,4 @@
-package multi;
+package thread.multi;
 
 /**
  * Created by Jang Jeong Hyeon on 2017-08-24.

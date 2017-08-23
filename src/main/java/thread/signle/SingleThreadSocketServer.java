@@ -1,4 +1,4 @@
-package signle;
+package thread.signle;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -1,4 +1,6 @@
-package multi;
+package thread.multi;
+
+import thread.runnable.WorkerRunnable;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -11,7 +13,7 @@ public class MultiThreadSocketServer implements Runnable {
     protected int serverPort = 8080;
     protected ServerSocket serverSocket = null;
     protected boolean isStopped = false;
-    protected Thread runnIngThread = null;
+    protected Thread runningThread = null;
 
     public MultiThreadSocketServer(int serverPort) {
         this.serverPort = serverPort;
@@ -19,7 +21,7 @@ public class MultiThreadSocketServer implements Runnable {
 
     public void run() {
         synchronized (this) {
-            this.runnIngThread = Thread.currentThread();
+            this.runningThread = Thread.currentThread();
         }
         openServerSocket();
         while (!isStopped) {

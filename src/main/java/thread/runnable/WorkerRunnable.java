@@ -1,4 +1,4 @@
-package multi;
+package thread.runnable;
 
 import java.io.InputStream;
 import java.io.OutputStream;
